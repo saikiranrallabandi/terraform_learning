@@ -17,14 +17,14 @@ terraform {
 }
 
 provider "aws" {
-  profile = "torchlight_dev"
+  profile = ""
   region  = "us-west-2"
   shared_credentials_file = "~/.aws/config"
 }
 
 
 resource "aws_instance" "my_server" {
-  ami           = "ami-04398d90f6081491e"
+  ami           = ""
   instance_type = "t2.micro"
 
   tags = {
